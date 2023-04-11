@@ -15,11 +15,18 @@ namespace HelloWorld
         public GreetPage()
         {
             InitializeComponent();
+
+            Content = new Label
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                Text = "Hello World"
+            };
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        private void Slider_OnValueChanged(object sender, ValueChangedEventArgs e)
         {
-            DisplayAlert("Title", "Hello World!", "Ok");
+            throw new NotImplementedException();
         }
     }
 }
